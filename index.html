@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Weather in city</title>
+</head>
+<body>
+    <div class="burger">
+        <img src="./images/Vector.svg" alt="">
+        <img src="./images/Vector.svg" alt="">
+        <img src="./images/Vector.svg" alt="">
+    </div>
+    <div class="pop-up">
+        <div class="pop-up__header"></div>
+        <div class="pop-up__body">
+            <p>Введите название города или страны на русском либо ангийском языке.<br>При неправильном вводе повторите попытку.</p>
+        </div>
+        <div class="pop-up__footer">
+            <p>Закройте окно и приступите к поиску погоды<br></p>
+        </div>
+    </div>
+   <div class="app">
+    <div class="container">
+        <div class="app__search-box">
+            <img src="./images/location-dot-solid.svg" alt="locationImage">
+            <input type="text" placeholder="Enter your city">
+            <button>
+                <img src="./images/magnifying-glass-solid.svg" alt="searchButton">
+            </button>
+        </div>
+        <div class="error">
+            <p>Invalid city name.</p>
+        </div>
+        <div class="app__weather-main">
+            <div class="app__weather-main__image">
+                <img src="./images/cloud-solid.svg" alt="">
+            </div>
+            <h1 class="temperature"></h1>
+            <h2 class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./images/water-solid.svg" alt="">
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/wind-solid.svg" alt="">
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <script src="app.js"></script>
+   <script src="popUp.js"></script>
+</body>
+</html>
